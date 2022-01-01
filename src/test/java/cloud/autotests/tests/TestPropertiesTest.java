@@ -16,13 +16,13 @@ import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.Selenide.open;
 
 @Story("Properties of Tests")
-public class TestPropertiesTest extends TestBase{
+public class TestPropertiesTest extends TestBase {
     private static final String PROJECT_NAME = "teacher qa_guru_diplom_project";
     private static final String STATUS_NAME = "New";
 
     @WithLogin
     @Test
-    void checkTestProperties(){
+    void checkTestProperties() {
         ProjectsTable projectsTable = open(App.config.webUrl(), ProjectsTable.class);
         ProjectPage projectPage = projectsTable.navigateTo(PROJECT_NAME);
         projectPage.getSidebar().navigateTo(MenuItem.TEST_CASES);

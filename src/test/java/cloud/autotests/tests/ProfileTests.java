@@ -24,6 +24,4 @@ public class ProfileTests extends TestBase {
         $$(".PaneSection").find(text("Username")).should(text("testuser"));
         $$(".PaneSection").find(text("Full name")).should(text("Test User"));
     }
-
-
 }

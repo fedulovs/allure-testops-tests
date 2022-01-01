@@ -18,7 +18,7 @@ public class GeneratedTests extends TestBase {
     @DisplayName("Page title should have header text")
     void titleTest() {
         step("Open url /", () ->
-            open(""));
+                open(""));
 
         step("Page title should have text 'Allure TestOps'", () -> {
             String expectedTitle = "Allure TestOps";
@@ -33,7 +33,7 @@ public class GeneratedTests extends TestBase {
     @DisplayName("Page console log should not have errors")
     void consoleShouldNotHaveErrorsTest() {
         step("Open url /", () ->
-            open(""));
+                open(""));
 
         step("Console logs should not contain text 'SEVERE'", () -> {
             String consoleLogs = DriverUtils.getConsoleLogs();

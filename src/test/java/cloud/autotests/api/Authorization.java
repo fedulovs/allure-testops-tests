@@ -22,6 +22,6 @@ public class Authorization {
     }
 
     public String getAccessToken() {
-      return getAuthorizationResponse().path("access_token");
+        return getAuthorizationResponse().path("access_token");
     }
 }
